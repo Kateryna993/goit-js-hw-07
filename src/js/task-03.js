@@ -30,7 +30,6 @@ const galleryListContainer = document.querySelector('#gallery');
 
 // console.log(galleryListContainer);
 
-
 const imagesListItemTemplate = ({url, alt}) => {
   return `
   <li class="gallery-item">
@@ -38,7 +37,6 @@ const imagesListItemTemplate = ({url, alt}) => {
   </li>
   `;
 }
-
 
 const galleryMarkup = images.map(imagesListItemTemplate).join("");
 

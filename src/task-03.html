@@ -14,17 +14,27 @@
         line-height: 1.5;
       }
 
-      .gallery-item {
-        list-style: none;
+      #gallery {
         display: flex;
         flex-direction: column;
+        max-width: 960px;
+        min-width: 320px;
+        margin: 0 auto;
+       
+      }
+
+      .gallery-item {
+        list-style: none;
         margin-bottom: 10px;
+        
       }
 
       .image {
-        width: 400px;
-        
+        display: block;
+        max-width: 100%;
+        height: auto;
       }
+
     </style>
   </head>
   <body>
