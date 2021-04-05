@@ -17,13 +17,10 @@ const destroyBtn = document.querySelector('[data-action="destroy"]');
 
 const boxesContainer = document.querySelector('#boxes');
 
-console.log(renderBtn);
-
-console.log(destroyBtn);
-
-console.log(boxesContainer);
-
-console.log(controls.firstElementChild.value)
+// console.log(renderBtn);
+// console.log(destroyBtn);
+// console.log(boxesContainer);
+// console.log(controls.firstElementChild.value)
 
 renderBtn.addEventListener('click', (event) => {
     const amount = controls.firstElementChild.value;
@@ -31,17 +28,14 @@ renderBtn.addEventListener('click', (event) => {
 });
 
 function createBoxes(amount) {
-    let boxWidth = 30;
-    let boxHeight = 30;
+    let size = 30;
     for (let i = 1; i <= amount; i += 1) {
         const newBox = document.createElement('div');
         boxesContainer.append(newBox);
-        newBox.style.width = `${boxWidth}px`;
-        newBox.style.height = `${boxHeight}px`;
+        newBox.style.width = `${size}px`;
+        newBox.style.height = `${size}px`;
         newBox.style.backgroundColor = `rgb(${random()}, ${random()}, ${random()})`;
-        boxWidth += 10;
-        boxHeight += 10;
-
+        size += 10;
     }
 
     function random() {
@@ -49,7 +43,7 @@ function createBoxes(amount) {
     }
 };
 
-
 destroyBtn.addEventListener('click', (event) => {
     boxesContainer.textContent = "";
+    controls.firstElementChild.value = "";
 });
