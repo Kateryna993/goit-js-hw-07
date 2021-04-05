@@ -9,16 +9,10 @@ const outputName = document.querySelector('#name-output');
 inputName.addEventListener('input', onInputDispalyName);
 console.log(outputName.textContent);
 
-   
-function onInputDispalyName (event) {
-
-    if (inputName.value === "") {
-        outputName.textContent = 'незнакомец';
-    } else {
-        outputName.textContent = inputName.value;
-    }   
-};
-
-
-
-
+function onInputDispalyName(event) {
+  if (inputName.value === '') {
+    outputName.textContent = 'незнакомец';
+  } else {
+    outputName.textContent = inputName.value;
+  }
+}

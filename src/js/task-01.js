@@ -15,7 +15,6 @@ console.log(`В списке ${categories.length} категории.`);
 
 categories.forEach(category => {
   const categoryTitle = category.firstElementChild;
-
   // console.log(category.firstElementChild);
 
   const categoryTitleText = categoryTitle.textContent;
@@ -23,7 +22,6 @@ categories.forEach(category => {
   console.log(`Категория: ${categoryTitleText}`);
 
   const categoryList = category.lastElementChild;
-
   // console.log(category.lastElementChild);
 
   const categoryListEls = categoryList.children;

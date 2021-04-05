@@ -30,17 +30,17 @@ const galleryListContainer = document.querySelector('#gallery');
 
 // console.log(galleryListContainer);
 
-const imagesListItemTemplate = ({url, alt}) => {
+const imagesListItemTemplate = ({ url, alt }) => {
   return `
   <li class="gallery-item">
     <img class="image" src="${url}" alt="${alt}">
   </li>
   `;
-}
+};
 
-const galleryMarkup = images.map(imagesListItemTemplate).join("");
+const galleryMarkup = images.map(imagesListItemTemplate).join('');
 
-console.log(galleryMarkup)
+console.log(galleryMarkup);
 
 // console.log(imagesListItemTemplate(images[1]))
 

@@ -24,7 +24,7 @@ const elements = makeIngredientsList(ingredients);
 
 elementsList.append(...elements);
 
-// через map без функции 
+// через map без функции
 // const newElementsList = ingredients.map(element => {
 //     const listItem = document.createElement('li');
 //     listItem.textContent = element;
@@ -35,7 +35,6 @@ elementsList.append(...elements);
 // console.log(newElementsList);
 
 // elementsList.append(...newElementsList);
-
 
 // вариант с for
 // const newElementsList = [];

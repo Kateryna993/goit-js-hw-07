@@ -7,8 +7,7 @@ const text = document.querySelector('#text');
 console.log(controls);
 console.log(text);
 
-
-controls.addEventListener('input', (event) => {
-    console.log(event.currentTarget.value);
-    text.style.fontSize = event.currentTarget.value + 'px';
-})
+controls.addEventListener('input', event => {
+  console.log(event.currentTarget.value);
+  text.style.fontSize = event.currentTarget.value + 'px';
+});

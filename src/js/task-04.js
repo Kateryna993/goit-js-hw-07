@@ -15,25 +15,24 @@ const incrementBtn = document.querySelector('button[data-action="increment"]');
 
 const value = document.querySelector('#value');
 
-
 let counterValue = 0;
 // console.log(value.textContent);
 
-function decrement () {
-    counterValue -= 1;
+function decrement() {
+  counterValue -= 1;
 
-    value.textContent = counterValue;
+  value.textContent = counterValue;
 
-    console.log('Отнимает значение');
-};
+  console.log('Отнимает значение');
+}
 
-function increment () {
-    counterValue += 1;
+function increment() {
+  counterValue += 1;
 
-    value.textContent = counterValue;
+  value.textContent = counterValue;
 
-    console.log('Добавляет значение');
-};
+  console.log('Добавляет значение');
+}
 
 decrementBtn.addEventListener('click', decrement);
 

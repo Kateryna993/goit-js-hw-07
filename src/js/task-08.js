@@ -22,28 +22,28 @@ const boxesContainer = document.querySelector('#boxes');
 // console.log(boxesContainer);
 // console.log(controls.firstElementChild.value)
 
-renderBtn.addEventListener('click', (event) => {
-    const amount = controls.firstElementChild.value;
-    createBoxes(amount);
+renderBtn.addEventListener('click', event => {
+  const amount = controls.firstElementChild.value;
+  createBoxes(amount);
 });
 
 function createBoxes(amount) {
-    let size = 30;
-    for (let i = 1; i <= amount; i += 1) {
-        const newBox = document.createElement('div');
-        boxesContainer.append(newBox);
-        newBox.style.width = `${size}px`;
-        newBox.style.height = `${size}px`;
-        newBox.style.backgroundColor = `rgb(${random()}, ${random()}, ${random()})`;
-        size += 10;
-    }
+  let size = 30;
+  for (let i = 1; i <= amount; i += 1) {
+    const newBox = document.createElement('div');
+    boxesContainer.append(newBox);
+    newBox.style.width = `${size}px`;
+    newBox.style.height = `${size}px`;
+    newBox.style.backgroundColor = `rgb(${random()}, ${random()}, ${random()})`;
+    size += 10;
+  }
 
-    function random() {
-        return Math.floor(Math.random() * 256);
-    }
-};
+  function random() {
+    return Math.floor(Math.random() * 256);
+  }
+}
 
-destroyBtn.addEventListener('click', (event) => {
-    boxesContainer.textContent = "";
-    controls.firstElementChild.value = "";
+destroyBtn.addEventListener('click', event => {
+  boxesContainer.textContent = '';
+  controls.firstElementChild.value = '';
 });
